@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <meta
+    name="description"
+    content="Filipe Bernardo's portfolio showcasing web implementation, technical projects and application support work."
+  />
+
   <title>Filipe Bernardo | Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
@@ -11,9 +16,11 @@
 
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav">
-      <a href="#" class="logo">FB.</a>
+
+      <a href="#top" class="logo">FB.</a>
 
       <nav>
         <a href="#about">About</a>
@@ -21,15 +28,18 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+
     </div>
   </header>
 
 
-  <main>
+  <main id="top">
 
     <!-- HERO -->
     <section class="hero">
+
       <div class="container hero-content">
+
         <p class="eyebrow">Hello, I'm</p>
 
         <h1>Filipe Bernardo</h1>
@@ -40,25 +50,37 @@
 
         <p class="hero-description">
           I build, configure and support web applications, with experience
-          delivering client-facing solutions for organisations around the world.
+          delivering production client implementations for organisations around
+          the world.
         </p>
 
         <div class="hero-links">
-          <a href="#work" class="button primary">View my work</a>
-          <a href="https://github.com/FlipBernardo"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="button secondary">
+
+          <a href="#work" class="button primary">
+            View my work
+          </a>
+
+          <a
+            href="https://github.com/FlipBernardo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button secondary"
+          >
             GitHub
           </a>
+
         </div>
+
       </div>
+
     </section>
 
 
     <!-- ABOUT -->
     <section id="about" class="section">
+
       <div class="container narrow">
+
         <p class="section-label">About</p>
 
         <h2>A little about me</h2>
@@ -80,32 +102,90 @@
           where I later returned as a Teaching Assistant and supported student
           teams through the development of their own web applications.
         </p>
+
       </div>
+
     </section>
 
 
-    <!-- SELECTED WORK -->
+    <!-- CLIENT WORK -->
     <section id="work" class="section section-alt">
+
       <div class="container">
+
         <p class="section-label">Selected work</p>
 
         <h2>Client implementations</h2>
 
         <p class="section-intro">
           A selection of client-facing reporting websites I built while working
-          at NAVEX. These implementations were created within the EthicsPoint
+          at NAVEX. Each implementation was created within the EthicsPoint
           platform using client requirements, branding and supplied assets.
+          Hover over a project to explore the page.
         </p>
+
 
         <div class="project-grid">
 
+
+          <!-- REPSOL -->
           <article class="project-card">
+
+            <a
+              href="https://secure.ethicspoint.eu/domain/media/en/gui/103095/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+            >
+
+              <div class="project-browser">
+
+                <div class="browser-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                  <div class="browser-address">
+                    secure.ethicspoint.eu
+                  </div>
+                </div>
+
+                <div class="project-preview">
+
+                  <img
+                    src="images/repsol.png"
+                    alt="Repsol EthicsPoint reporting website"
+                    class="project-preview-image"
+                  />
+
+                  <div class="preview-hint">
+                    Hover to explore
+                  </div>
+
+                </div>
+
+              </div>
+
+            </a>
+
+
             <div class="project-content">
-              <p class="project-type">NAVEX · EthicsPoint</p>
+
+              <p class="project-type">
+                NAVEX · EthicsPoint
+              </p>
+
               <h3>Repsol</h3>
+
               <p>
-                Client reporting website implemented and customised within the
-                EthicsPoint platform.
+                Built and customised the client-facing reporting website within
+                the EthicsPoint platform, following client branding and
+                implementation requirements.
+              </p>
+
+              <p class="contribution">
+                <strong>My contribution:</strong>
+                Front-end implementation, styling, configuration and testing.
               </p>
 
               <div class="tags">
@@ -119,20 +199,75 @@
                 href="https://secure.ethicspoint.eu/domain/media/en/gui/103095/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-link">
+                class="project-link"
+              >
                 View live site →
               </a>
+
             </div>
+
           </article>
 
 
+          <!-- BAKER TILLY -->
           <article class="project-card">
+
+            <a
+              href="https://secure.ethicspoint.com/domain/media/en/gui/1003971/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+            >
+
+              <div class="project-browser">
+
+                <div class="browser-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                  <div class="browser-address">
+                    secure.ethicspoint.com
+                  </div>
+                </div>
+
+                <div class="project-preview">
+
+                  <img
+                    src="images/bakertilly.png"
+                    alt="Baker Tilly EthicsPoint reporting website"
+                    class="project-preview-image"
+                  />
+
+                  <div class="preview-hint">
+                    Hover to explore
+                  </div>
+
+                </div>
+
+              </div>
+
+            </a>
+
+
             <div class="project-content">
-              <p class="project-type">NAVEX · EthicsPoint</p>
+
+              <p class="project-type">
+                NAVEX · EthicsPoint
+              </p>
+
               <h3>Baker Tilly</h3>
+
               <p>
-                Client-specific reporting interface built and configured for
-                production use.
+                Built and configured a client-specific reporting interface for
+                production use, adapting the implementation to the organisation's
+                branding and requirements.
+              </p>
+
+              <p class="contribution">
+                <strong>My contribution:</strong>
+                Front-end implementation, content configuration, styling and
+                testing.
               </p>
 
               <div class="tags">
@@ -146,20 +281,75 @@
                 href="https://secure.ethicspoint.com/domain/media/en/gui/1003971/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-link">
+                class="project-link"
+              >
                 View live site →
               </a>
+
             </div>
+
           </article>
 
 
+          <!-- CRUSOE -->
           <article class="project-card">
+
+            <a
+              href="https://secure.ethicspoint.com/domain/media/en/gui/1002889/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+            >
+
+              <div class="project-browser">
+
+                <div class="browser-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                  <div class="browser-address">
+                    secure.ethicspoint.com
+                  </div>
+                </div>
+
+                <div class="project-preview">
+
+                  <img
+                    src="images/crusoe.png"
+                    alt="Crusoe EthicsPoint reporting website"
+                    class="project-preview-image"
+                  />
+
+                  <div class="preview-hint">
+                    Hover to explore
+                  </div>
+
+                </div>
+
+              </div>
+
+            </a>
+
+
             <div class="project-content">
-              <p class="project-type">NAVEX · EthicsPoint</p>
+
+              <p class="project-type">
+                NAVEX · EthicsPoint
+              </p>
+
               <h3>Crusoe</h3>
+
               <p>
-                Custom implementation created to match client requirements and
-                branding within an existing enterprise platform.
+                Created a custom implementation designed around the client's
+                branding and requirements while working within an existing
+                enterprise platform.
+              </p>
+
+              <p class="contribution">
+                <strong>My contribution:</strong>
+                Front-end development, styling, configuration and release
+                testing.
               </p>
 
               <div class="tags">
@@ -173,20 +363,74 @@
                 href="https://secure.ethicspoint.com/domain/media/en/gui/1002889/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-link">
+                class="project-link"
+              >
                 View live site →
               </a>
+
             </div>
+
           </article>
 
 
+          <!-- FINLAYS -->
           <article class="project-card">
+
+            <a
+              href="https://secure.ethicspoint.eu/domain/media/en/gui/114722/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+            >
+
+              <div class="project-browser">
+
+                <div class="browser-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                  <div class="browser-address">
+                    secure.ethicspoint.eu
+                  </div>
+                </div>
+
+                <div class="project-preview">
+
+                  <img
+                    src="images/finlays.png"
+                    alt="Finlays EthicsPoint reporting website"
+                    class="project-preview-image"
+                  />
+
+                  <div class="preview-hint">
+                    Hover to explore
+                  </div>
+
+                </div>
+
+              </div>
+
+            </a>
+
+
             <div class="project-content">
-              <p class="project-type">NAVEX · EthicsPoint</p>
+
+              <p class="project-type">
+                NAVEX · EthicsPoint
+              </p>
+
               <h3>Finlays</h3>
+
               <p>
-                Branded EthicsPoint implementation developed from customer
+                Developed a branded EthicsPoint implementation from customer
                 requirements and supplied design assets.
+              </p>
+
+              <p class="contribution">
+                <strong>My contribution:</strong>
+                Front-end implementation, visual styling, content configuration
+                and testing.
               </p>
 
               <div class="tags">
@@ -199,20 +443,74 @@
                 href="https://secure.ethicspoint.eu/domain/media/en/gui/114722/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-link">
+                class="project-link"
+              >
                 View live site →
               </a>
+
             </div>
+
           </article>
 
 
+          <!-- NOVOLEX -->
           <article class="project-card">
+
+            <a
+              href="https://secure.ethicspoint.com/domain/media/en/gui/87887/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+            >
+
+              <div class="project-browser">
+
+                <div class="browser-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                  <div class="browser-address">
+                    secure.ethicspoint.com
+                  </div>
+                </div>
+
+                <div class="project-preview">
+
+                  <img
+                    src="images/novolex.png"
+                    alt="Novolex EthicsPoint reporting website"
+                    class="project-preview-image"
+                  />
+
+                  <div class="preview-hint">
+                    Hover to explore
+                  </div>
+
+                </div>
+
+              </div>
+
+            </a>
+
+
             <div class="project-content">
-              <p class="project-type">NAVEX · EthicsPoint</p>
+
+              <p class="project-type">
+                NAVEX · EthicsPoint
+              </p>
+
               <h3>Novolex</h3>
+
               <p>
-                Client-facing reporting site built, styled and configured within
-                NAVEX's EthicsPoint environment.
+                Built, styled and configured a client-facing reporting site
+                within NAVEX's EthicsPoint environment.
+              </p>
+
+              <p class="contribution">
+                <strong>My contribution:</strong>
+                Front-end implementation, client-specific configuration and
+                quality checks.
               </p>
 
               <div class="tags">
@@ -225,20 +523,73 @@
                 href="https://secure.ethicspoint.com/domain/media/en/gui/87887/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-link">
+                class="project-link"
+              >
                 View live site →
               </a>
+
             </div>
+
           </article>
 
 
+          <!-- SURVENTIS -->
           <article class="project-card">
+
+            <a
+              href="https://secure.ethicspoint.eu/domain/media/en/gui/115671/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+            >
+
+              <div class="project-browser">
+
+                <div class="browser-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                  <div class="browser-address">
+                    secure.ethicspoint.eu
+                  </div>
+                </div>
+
+                <div class="project-preview">
+
+                  <img
+                    src="images/surventis.png"
+                    alt="Surventis EthicsPoint reporting website"
+                    class="project-preview-image"
+                  />
+
+                  <div class="preview-hint">
+                    Hover to explore
+                  </div>
+
+                </div>
+
+              </div>
+
+            </a>
+
+
             <div class="project-content">
-              <p class="project-type">NAVEX · EthicsPoint</p>
+
+              <p class="project-type">
+                NAVEX · EthicsPoint
+              </p>
+
               <h3>Surventis</h3>
+
               <p>
-                Reporting application implementation built around client
-                branding and platform requirements.
+                Built a customised reporting implementation around client
+                branding, content and platform requirements.
+              </p>
+
+              <p class="contribution">
+                <strong>My contribution:</strong>
+                Front-end implementation, styling, configuration and testing.
               </p>
 
               <div class="tags">
@@ -251,47 +602,129 @@
                 href="https://secure.ethicspoint.eu/domain/media/en/gui/115671/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-link">
+                class="project-link"
+              >
                 View live site →
               </a>
+
             </div>
+
           </article>
+
 
         </div>
 
 
         <!-- OTHER IMPLEMENTATIONS -->
         <div class="other-work">
-          <h3>Other implementations</h3>
 
-          <div class="simple-links">
+          <p class="section-label">
+            More client work
+          </p>
+
+          <h3>Additional implementations</h3>
+
+          <p class="small-description">
+            Further client implementations I built and supported during my time
+            at NAVEX.
+          </p>
+
+
+          <div class="mini-project-grid">
+
+
+            <!-- WSH -->
             <a
               href="https://secure.ethicspoint.eu/domain/media/en/gui/114522/index.html"
               target="_blank"
-              rel="noopener noreferrer">
-              WSH ↗
+              rel="noopener noreferrer"
+              class="mini-project-card"
+            >
+
+              <img
+                src="images/wsh.png"
+                alt="WSH EthicsPoint reporting website"
+                class="mini-project-image"
+              />
+
+              <div class="mini-project-content">
+
+                <strong>WSH</strong>
+
+                <span>
+                  View live site →
+                </span>
+
+              </div>
+
             </a>
 
+
+            <!-- FUZE HEALTH -->
             <a
               href="https://secure.ethicspoint.com/domain/media/en/gui/89278/index.html"
               target="_blank"
-              rel="noopener noreferrer">
-              Fuze Health ↗
+              rel="noopener noreferrer"
+              class="mini-project-card"
+            >
+
+              <img
+                src="images/fuzehealth.png"
+                alt="Fuze Health EthicsPoint reporting website"
+                class="mini-project-image"
+              />
+
+              <div class="mini-project-content">
+
+                <strong>Fuze Health</strong>
+
+                <span>
+                  View live site →
+                </span>
+
+              </div>
+
             </a>
 
+
+            <!-- HELIX -->
             <a
               href="https://secure.ethicspoint.com/domain/media/en/gui/1001991/index.html"
               target="_blank"
-              rel="noopener noreferrer">
-              Helix ↗
+              rel="noopener noreferrer"
+              class="mini-project-card"
+            >
+
+              <img
+                src="images/helix.png"
+                alt="Helix EthicsPoint reporting website"
+                class="mini-project-image"
+              />
+
+              <div class="mini-project-content">
+
+                <strong>Helix</strong>
+
+                <span>
+                  View live site →
+                </span>
+
+              </div>
+
             </a>
+
+
           </div>
+
         </div>
 
 
         <!-- CONTRIBUTED TO -->
         <div class="other-work">
-          <p class="section-label">Additional client work</p>
+
+          <p class="section-label">
+            Additional client work
+          </p>
 
           <h3>Contributed to</h3>
 
@@ -300,52 +733,144 @@
             implementations for the following organisations.
           </p>
 
+
           <div class="contribution-grid">
 
-            <a
-              href="https://secure.ethicspoint.com/domain/media/en/gui/48987/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contribution-card">
-              <strong>Apple</strong>
-              <span>Updates & maintenance →</span>
-            </a>
 
-            <a
-              href="https://secure.ethicspoint.com/domain/media/en/gui/56532/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contribution-card">
+            <!-- APPLE -->
+          <a
+            href="https://secure.ethicspoint.com/domain/media/en/gui/48987/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contribution-card contribution-browser-card"
+          >
+            <div class="project-browser">
+              <div class="browser-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="browser-address">
+                  secure.ethicspoint.com
+                </div>
+              </div>
+
+              <div class="contribution-preview">
+                <img
+                  src="images/apple.png"
+                  alt="Apple EthicsPoint reporting website"
+                  class="contribution-preview-image"
+                />
+
+                <div class="preview-hint">
+                  Hover to explore
+                </div>
+              </div>
+            </div>
+
+            <div class="contribution-content">
+              <p class="project-type">Contributed to</p>
+
+              <strong>Apple</strong>
+
+              <span>
+                Contributed to updates and maintenance of an existing NAVEX implementation.
+              </span>
+
+              <span class="contribution-link">
+                View live site →
+              </span>
+            </div>
+          </a>
+
+
+          <!-- UPS -->
+          <a
+            href="https://secure.ethicspoint.com/domain/media/en/gui/56532/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contribution-card contribution-browser-card"
+          >
+            <div class="project-browser">
+              <div class="browser-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="browser-address">
+                  secure.ethicspoint.com
+                </div>
+              </div>
+
+              <div class="contribution-preview">
+                <img
+                  src="images/ups.png"
+                  alt="UPS EthicsPoint reporting website"
+                  class="contribution-preview-image"
+                />
+
+                <div class="preview-hint">
+                  Hover to explore
+                </div>
+              </div>
+            </div>
+
+            <div class="contribution-content">
+              <p class="project-type">Contributed to</p>
+
               <strong>UPS</strong>
-              <span>Updates & maintenance →</span>
-            </a>
+
+              <span>
+                Contributed to updates and maintenance of an existing NAVEX implementation.
+              </span>
+
+              <span class="contribution-link">
+                View live site →
+              </span>
+            </div>
+          </a>
+
 
           </div>
+
         </div>
 
+
       </div>
+
     </section>
 
 
-    <!-- OTHER PROJECTS -->
+    <!-- INTERNAL PROJECTS -->
     <section id="projects" class="section">
+
       <div class="container">
 
-        <p class="section-label">Beyond client work</p>
+        <p class="section-label">
+          Beyond client work
+        </p>
 
         <h2>Tools & internal projects</h2>
 
         <p class="section-intro">
-          Alongside client implementations, I've worked on internal tools and
-          process improvements aimed at reducing repetitive work and improving
-          delivery.
+          Alongside client implementations, I've worked on internal tools,
+          accessibility initiatives and process improvements aimed at reducing
+          repetitive work and improving delivery.
         </p>
 
-        <div class="project-grid">
 
-          <article class="project-card">
+        <div class="project-grid internal-grid">
+
+
+          <!-- EXCEL TOOL -->
+          <article class="project-card text-project">
+
             <div class="project-content">
-              <p class="project-type">Internal Tool</p>
+
+              <p class="project-type">
+                Internal Tool
+              </p>
+
               <h3>Excel to Code Generator</h3>
 
               <p>
@@ -354,26 +879,43 @@
                 formatted code used by our internal systems.
               </p>
 
+              <p class="contribution">
+                The tool reduced repetitive manual formatting and made a common
+                team process quicker and more consistent.
+              </p>
+
               <div class="tags">
                 <span>JavaScript</span>
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>Automation</span>
               </div>
+
             </div>
+
           </article>
 
 
-          <article class="project-card">
+          <!-- ACCESSIBILITY -->
+          <article class="project-card text-project">
+
             <div class="project-content">
-              <p class="project-type">Accessibility Project</p>
+
+              <p class="project-type">
+                Accessibility Project
+              </p>
+
               <h3>AI-Assisted Accessibility Migration</h3>
 
               <p>
                 Contributed to a large-scale initiative to update more than
-                1,000 existing websites for accessibility by creating
-                structured instructions and repeatable workflows used with AI
-                development tools.
+                1,000 existing websites for accessibility.
+              </p>
+
+              <p class="contribution">
+                Helped create structured prompts and repeatable workflows that
+                could be used with AI development tools to make consistent code
+                updates at scale.
               </p>
 
               <div class="tags">
@@ -382,13 +924,21 @@
                 <span>Process Design</span>
                 <span>Web Development</span>
               </div>
+
             </div>
+
           </article>
 
 
-          <article class="project-card">
+          <!-- HACKATHONS -->
+          <article class="project-card text-project">
+
             <div class="project-content">
-              <p class="project-type">Hackathons</p>
+
+              <p class="project-type">
+                Hackathons
+              </p>
+
               <h3>Internal Process Tools</h3>
 
               <p>
@@ -397,55 +947,77 @@
                 improving team efficiency.
               </p>
 
+              <p class="contribution">
+                These projects gave me the opportunity to move from identifying
+                a problem to designing, prototyping and presenting a working
+                solution.
+              </p>
+
               <div class="tags">
                 <span>Prototyping</span>
                 <span>JavaScript</span>
                 <span>Problem Solving</span>
               </div>
+
             </div>
+
           </article>
+
 
         </div>
 
       </div>
+
     </section>
 
 
     <!-- CONTACT -->
     <section id="contact" class="section section-alt">
+
       <div class="container narrow contact">
 
-        <p class="section-label">Contact</p>
+        <p class="section-label">
+          Contact
+        </p>
 
         <h2>Let's connect</h2>
 
         <p>
-          I'm currently interested in opportunities across web development,
-          technical implementation, application support and customer-facing
-          technical roles.
+          I'm interested in opportunities across web development, technical
+          implementation, application support and customer-facing technical
+          roles.
         </p>
 
         <div class="hero-links">
+
           <a
             href="https://github.com/FlipBernardo"
             target="_blank"
             rel="noopener noreferrer"
-            class="button primary">
+            class="button primary"
+          >
             GitHub
           </a>
+
         </div>
 
       </div>
+
     </section>
+
 
   </main>
 
 
+  <!-- FOOTER -->
   <footer>
+
     <div class="container">
       <p>© 2026 Filipe Bernardo</p>
     </div>
+
   </footer>
+
 
 </body>
 </html>
