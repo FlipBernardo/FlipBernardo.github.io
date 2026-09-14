@@ -44,6 +44,7 @@ html {
 }
 
 body {
+  font-size: 15px;
   font-family:
     "Inter",
     -apple-system,
@@ -452,7 +453,7 @@ nav a:hover {
 .project-preview {
   position: relative;
 
-  height: 275px;
+  height: 220px;
 
   overflow: hidden;
 
