@@ -7,7 +7,10 @@
   <meta name="description" content="Filipe Bernardo's portfolio showcasing web implementation, technical projects and application support work."/>
 
   <title>Filipe Bernardo | Portfolio</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+  rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -21,6 +24,7 @@
 
       <nav>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -46,7 +50,7 @@
         <div class="hero-links">
           <a href="#work" class="button primary">View my work</a>
           <a href="https://github.com/FlipBernardo" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
-          <a href="https://linkedin.com/in/filipe-bernardo" target="_blank" rel="noopener noreferrer" class="button secondary">LinkedIn</a>
+          <a href="https://linkedin.com/in/filipeber" target="_blank" rel="noopener noreferrer" class="button secondary">LinkedIn</a>
         </div>
 
       </div>
@@ -69,6 +73,53 @@
 
     </section>
 
+<!-- SKILLS -->
+    <section id="skills" class="skills-section">
+  <div class="container">
+
+    <p class="section-label">Skills</p>
+
+    <h2>What I work with</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3>Development</h3>
+        <div class="skill-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>SQL</span>
+          <span>Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <div class="skill-tags">
+          <span>Git</span>
+          <span>SVN</span>
+          <span>Jira</span>
+          <span>Confluence</span>
+          <span>Figma</span>
+          <span>Photoshop</span>
+          <span>AI-assisted development</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Platforms & Data</h3>
+        <div class="skill-tags">
+          <span>Salesforce</span>
+          <span>Excel</span>
+          <span>Database Handling</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <!-- CLIENT WORK -->
     <section id="work" class="section section-alt">
@@ -76,6 +127,7 @@
         <p class="section-label">Selected work</p>
         <h2>Client implementations</h2>
         <p class="section-intro">A selection of client-facing reporting websites I built while working at NAVEX. Each implementation was created within the EthicsPoint platform using client requirements, branding and supplied assets. Hover over a project to explore the page.</p>
+        <p class="live-site-note">The websites shown here are live production implementations and may have changed since I originally worked on them due to ongoing updates, maintenance and later client changes. The hover previews show the version of each site from the period when I worked on it.</p>
         <div class="project-grid">
 
           <!-- REPSOL -->
@@ -448,6 +500,7 @@
               <div class="tags">
                 <span>HTML</span>
                 <span>CSS</span>
+                <span>JavaScript</span>
                 <span>Configuration</span>
                 <span>Database Handling</span>
                 <span>Testing</span>
@@ -668,12 +721,58 @@
           <h3>Contributed to</h3>
 
           <p class="small-description">
-            I also contributed to updates and maintenance for existing NAVEX
-            implementations for the following organisations.
+            I also supported existing NAVEX implementations through ongoing updates, maintenance and specialist ownership.
           </p>
 
 
           <div class="contribution-grid">
+
+
+            <!-- BNP -->
+          <a
+            href="https://secure.ethicspoint.eu/domain/media/en/gui/110837/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contribution-card contribution-browser-card"
+          >
+            <div class="project-browser">
+              <div class="browser-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="browser-address">
+                  secure.ethicspoint.eu/bnp
+                </div>
+              </div>
+
+              <div class="contribution-preview">
+                <img
+                  src="images/bnp.png"
+                  alt="BNP EthicsPoint reporting website"
+                  class="contribution-preview-image"
+                />
+
+                <div class="preview-hint">
+                  Hover to explore
+                </div>
+              </div>
+            </div>
+
+            <div class="contribution-content">
+              <p class="project-type">Subject Matter Expert</p>
+
+              <strong>BNP Paribas</strong>
+
+              <span>
+                Served as the Subject Matter Expert for this NAVEX implementation, supporting complex updates, configuration decisions and ongoing maintenance.
+              </span>
+
+              <span class="contribution-link">
+                View live site →
+              </span>
+            </div>
+          </a>
 
 
             <!-- APPLE -->
@@ -791,7 +890,7 @@
 
         <h2>Tools & internal projects</h2>
 
-        <p class="section-intro">
+        <p class="section-intro-tools">
           Alongside client implementations, I've worked on internal tools,
           accessibility initiatives and process improvements aimed at reducing
           repetitive work and improving delivery.
@@ -802,70 +901,126 @@
 
 
           <!-- EXCEL TOOL -->
-          <article class="project-card text-project">
+          <article class="project-card">
 
-            <div class="project-content">
+          <div class="project-browser">
 
-              <p class="project-type">
-                Internal Tool
-              </p>
+            <div class="browser-bar">
+              <span></span>
+              <span></span>
+              <span></span>
 
-              <h3>Excel to Code Generator</h3>
+              <div class="browser-address">
+                Dialing Formatter
+              </div>
+            </div>
 
-              <p>
-                Built a browser-based tool using HTML, CSS and JavaScript that
-                allowed structured data copied from Excel to be converted into
-                formatted code used by our internal systems.
-              </p>
+            <div class="project-preview">
 
-              <p class="contribution">
-                The tool reduced repetitive manual formatting and made a common
-                team process quicker and more consistent.
-              </p>
+              <img
+                src="images/dialingformatter.png"
+                alt="Excel to Code Generator internal tool"
+                class="project-preview-image"
+              />
 
-              <div class="tags">
-                <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
+              <div class="preview-hint">
+                Hover to explore
               </div>
 
             </div>
 
-          </article>
+          </div>
 
+          <div class="project-content">
 
-          <!-- ACCESSIBILITY -->
-          <article class="project-card text-project">
+            <p class="project-type">
+              Internal Tool
+            </p>
 
-            <div class="project-content">
+            <h3>Excel to Code Generator</h3>
 
-              <p class="project-type">
-                Accessibility Project
-              </p>
+            <p>
+              Built a browser-based tool using HTML, CSS and JavaScript that converted
+              structured data copied from Excel into formatted code used by our internal
+              systems.
+            </p>
 
-              <h3>AI-Assisted Accessibility Migration</h3>
+            <p class="contribution">
+              <strong>Why I built it:</strong>
+              To reduce repetitive manual formatting and make a common team process
+              quicker and more consistent.
+            </p>
 
-              <p>
-                Contributed to a large-scale initiative to update more than
-                1,000 existing websites for accessibility.
-              </p>
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Automation</span>
+              <span>Excel</span>
+            </div>
 
-              <p class="contribution">
-                Helped create structured prompts and repeatable workflows that
-                could be used with AI development tools to make consistent code
-                updates at scale.
-              </p>
+          </div>
 
-              <div class="tags">
-                <span>Accessibility</span>
-                <span>AI</span>
-                <span>Process Design</span>
-                <span>Web Development</span>
+        </article>
+
+        <!-- DATA SCRUBBER 2.0 TOOL -->
+          <article class="project-card">
+
+          <div class="project-browser">
+
+            <div class="browser-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <div class="browser-address">
+                Data Scrubber 2.0
+              </div>
+            </div>
+
+            <div class="project-preview">
+
+              <img
+                src="images/datascrubber.png"
+                alt="Data Scrubber 2.0 internal tool"
+                class="project-preview-image"
+              />
+
+              <div class="preview-hint">
+                Hover to explore
               </div>
 
             </div>
 
-          </article>
+          </div>
+
+          <div class="project-content">
+
+            <p class="project-type">
+              Internal Tool
+            </p>
+
+            <h3>Database Cleanser Tool</h3>
+
+            <p>
+              Collaborated with another developer to modernise an existing internal data validation tool used before database imports. The 2.0 version improved usability, fixed existing bugs and added checks for issues such as invalid US ZIP codes, unsupported characters and incorrectly formatted data.
+            </p>
+
+            <p class="contribution">
+              <strong>My contribution:</strong> Collaborated on the redesign, validation logic, bug fixes and modernisation of the existing tool.
+            </p>
+
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Automation</span>
+              <span>Excel</span>
+            </div>
+
+          </div>
+
+        </article>
 
 
           <!-- HACKATHONS -->
@@ -880,7 +1035,7 @@
               <h3>Internal Process Tools</h3>
 
               <p>
-                Participated in company hackathons where we designed and built
+                Participated in regular company hackathons where we designed and built
                 internal tools focused on reducing repetitive processes and
                 improving team efficiency.
               </p>
@@ -901,6 +1056,35 @@
 
           </article>
 
+          <!-- ACCESSIBILITY -->
+          <article class="project-card text-project">
+
+            <div class="project-content">
+
+              <p class="project-type">
+                Accessibility Project
+              </p>
+
+              <h3>AI-Assisted Accessibility Migration</h3>
+
+              <p>
+                Contributed to a large-scale initiative to update our team's templates and hundreds of existing websites for accessibility.
+              </p>
+
+              <p class="contribution">
+                Supported the deployment of an AI-assisted tool used to update existing templates and websites at scale as part of a large accessibility migration project.
+              </p>
+
+              <div class="tags">
+                <span>Accessibility</span>
+                <span>AI</span>
+                <span>Process Design</span>
+                <span>Web Development</span>
+              </div>
+
+            </div>
+
+          </article>
 
         </div>
 
@@ -928,10 +1112,15 @@
 
         <div class="hero-links">
 
-          <a href="https://github.com/FlipBernardo" target="_blank" rel="noopener noreferrer" class="button primary">GitHub</a>
-          <a href="https://linkedin.com/in/filipeber" target="_blank" rel="noopener noreferrer" class="button primary">LinkedIn</a>
+          <a href="https://github.com/FlipBernardo" target="_blank" rel="noopener noreferrer" class="button secondary-connect">GitHub</a>
+          <a href="https://linkedin.com/in/filipeber" target="_blank" rel="noopener noreferrer" class="button secondary-connect">LinkedIn</a>
         </div>
-        <p>Email: <u>filipebernardo.fb@gmail.com</u></p>
+        <p>
+          Email:
+          <a href="mailto:filipebernardo.fb@gmail.com" class="email-link">
+            filipebernardo.fb@gmail.com
+          </a>
+        </p>
 
       </div>
 
