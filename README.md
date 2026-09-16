@@ -1,6 +1,6 @@
 # Filipe Bernardo — Portfolio
 
-Personal portfolio showcasing selected web implementations, internal tools and technical projects from my experience in web development, software implementation and application support.
+Personal portfolio showcasing selected web implementations, internal tools, and technical projects from my experience in web development, software implementation, and application support.
 
 ## Live Site
 
