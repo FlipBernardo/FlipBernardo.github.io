@@ -30,3 +30,5 @@ Some showcased client websites are live production systems and may have changed 
 - GitHub: [FlipBernardo](https://github.com/FlipBernardo)
 - LinkedIn: [Filipe Bernardo](https://linkedin.com/in/filipeber)
 - Email: filipebernardo.fb@gmail.com
+
+  
