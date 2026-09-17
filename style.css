@@ -275,17 +275,31 @@ nav a:hover {
   border-color: var(--accent);
 }
 
-.button.secondary-connect {
-  border: 1px solid var(--border-hover);
+.secondary-connect {
+  min-width: 160px;
+  padding: 13px 24px;
 
-  background: transparent;
-  color: var(--text);
+  background: #1c1c1c;
+  color: #f5f3ed;
+
+  border: 1px solid #1c1c1c;
+  border-radius: 10px;
+
+  font-weight: 650;
+  text-align: center;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.button.secondary-connect:hover {
-  background: var(--surface-soft);
-  border-color: var(--accent);
-  color: var(--accent);
+.secondary-connect:hover {
+  background: #2a2a2a;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
 
@@ -295,7 +309,7 @@ nav a:hover {
 
 .section h2 {
   margin-top: 10px;
-
+  color: var(--text-black);
   font-size: clamp(2.2rem, 5vw, 3.7rem);
 
   line-height: 1.08;
@@ -333,6 +347,9 @@ nav a:hover {
   font-size: 1.05rem;
 }
 
+.projects-title {
+  color: var(--text) !important;
+}
 
 /* ========================================
    FEATURED PROJECT GRID
@@ -342,9 +359,14 @@ nav a:hover {
   max-width: 760px;
   margin-top: -28px;
   margin-bottom: 42px;
-  padding-left: 14px;
-  border-left: 3px solid var(--accent-soft);
-  color: var(--text-subtle);
+  padding: 14px 16px;
+
+  background: rgba(28, 28, 28, 0.06);
+
+  border-left: 3px solid #7a5a16;
+  border-radius: 6px;
+
+  color: #3f3218;
   font-size: 0.9rem;
 }
 
@@ -827,6 +849,11 @@ nav a:hover {
 
 .contact {
   text-align: center;
+  color: var(--bg);
+}
+
+.contact p {
+  color: var(--bg) !important;
 }
 
 .contact .hero-links {
@@ -1076,7 +1103,7 @@ footer {
 ======================================== */
 
 .email-link {
-  color: var(--text);
+  color: var(--bg);
 
   text-decoration: underline;
 
