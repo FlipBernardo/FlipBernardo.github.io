@@ -476,6 +476,7 @@ nav a:hover {
   position: relative;
 
   height: 220px;
+  --preview-height: 220px;
 
   overflow: hidden;
 
@@ -492,7 +493,12 @@ nav a:hover {
 }
 
 .project-card:hover .project-preview-image {
-  transform: translateY(calc(-100% + 275px));
+  transform: translateY(calc(-100% + var(--preview-height)));
+}
+
+.project-card.is-previewing .project-preview-image,
+.contribution-card.is-previewing .contribution-preview-image {
+  transform: translateY(calc(-100% + var(--preview-height)));
 }
 
 
@@ -525,7 +531,9 @@ nav a:hover {
 }
 
 .project-card:hover .preview-hint,
-.contribution-card:hover .preview-hint {
+.contribution-card:hover .preview-hint,
+.project-card.is-previewing .preview-hint,
+.contribution-card.is-previewing .preview-hint {
   opacity: 0;
   transform: translateY(5px);
 }
@@ -764,6 +772,7 @@ nav a:hover {
   position: relative;
 
   height: 220px;
+  --preview-height: 220px;
 
   overflow: hidden;
 
@@ -780,7 +789,7 @@ nav a:hover {
 }
 
 .contribution-card:hover .contribution-preview-image {
-  transform: translateY(calc(-100% + 220px));
+  transform: translateY(calc(-100% + var(--preview-height)));
 }
 
 
@@ -888,10 +897,11 @@ footer {
 
   .project-preview {
     height: 340px;
+    --preview-height: 340px;
   }
 
   .project-card:hover .project-preview-image {
-    transform: translateY(calc(-100% + 340px));
+    transform: translateY(calc(-100% + var(--preview-height)));
   }
 
   .mini-project-grid {
@@ -951,12 +961,8 @@ footer {
 
   .project-preview {
     height: 235px;
+    --preview-height: 235px;
   }
-
-  .project-preview-image {
-    transform: none !important;
-  }
-
 
   /* Additional implementations */
 
@@ -977,17 +983,19 @@ footer {
 
   .contribution-preview {
     height: 230px;
+    --preview-height: 230px;
   }
 
-  .contribution-preview-image {
-    transform: none !important;
-  }
-
-
-  /* No hover hint on touch devices */
+  /* Touch preview hint */
 
   .preview-hint {
-    display: none;
+    display: block;
+    font-size: 0;
+  }
+
+  .preview-hint::after {
+    content: "Tap to explore";
+    font-size: 0.72rem;
   }
 
 }
@@ -1013,13 +1021,16 @@ footer {
 
   .project-preview {
     height: 205px;
+    --preview-height: 205px;
   }
 
   .contribution-preview {
     height: 205px;
+    --preview-height: 205px;
   }
 
 }
+
 
 /* ========================================
    SKILLS SECTION
