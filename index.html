@@ -1062,6 +1062,40 @@
 
   </footer>
 
+  <script>
+    const touchQuery = window.matchMedia('(max-width: 700px)');
+
+    function togglePreview(card) {
+      card.classList.add('is-previewing');
+    }
+
+    document.querySelectorAll('.project-image-link, .contribution-card').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        if (!touchQuery.matches) {
+          return;
+        }
+
+        const card = link.closest('.project-card, .contribution-card');
+
+        if (!card.classList.contains('is-previewing')) {
+          event.preventDefault();
+          togglePreview(card);
+        }
+      });
+    });
+
+    document.querySelectorAll('.project-preview').forEach((preview) => {
+      if (preview.closest('a')) {
+        return;
+      }
+
+      preview.addEventListener('click', () => {
+        if (touchQuery.matches) {
+          togglePreview(preview.closest('.project-card'));
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
