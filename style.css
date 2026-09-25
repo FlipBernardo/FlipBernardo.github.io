@@ -317,6 +317,10 @@ nav a:hover {
   letter-spacing: -0.045em;
 }
 
+.section-title-white{
+  color: var(--text) !important;
+}
+
 .section-intro {
   max-width: 760px;
 
